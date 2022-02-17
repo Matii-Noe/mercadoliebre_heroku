@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    /*Colors*/
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    /*Font Family*/
+    --roboto: 'Roboto', sans-serif;
+    /*Font Sizes*/
+    --text: 12px;
+    --title: 24px;
+    --text-lg: 18px;
+    --text-md: 16px;
+}
+
+/*Estilos globales*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--roboto);
+    background-color: var(--gris-claro);
+}
+
+h3 {
+    font-size: var(--title);
+}
+
+p {
+    font-size: var(--text);
+}
+
+img {
+    width: 100%;
+}
+
+/*Header*/
+
+header {
+    background-color: var(--amarillo);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header .top-header {
+ align-items: center;
+}
+
+header div p {
+    margin-right: 2rem;
+}
+
+header .top-header .form {
+    display: flex;
+    justify-content: center;
+}
+
+header .logo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    max-width: 110px;
+    max-height: 60px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header div div form input {
+    height: 2.25rem;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 3.8px;
+    width: 20rem;
+}
+
+header div div form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div div form button {
+    border-radius: 0 5px 5px 0;
+    height: 3rem;
+    width: 3rem;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-search {
+    color: var(--gris-oscuro);
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .form {
+    display: flex;
+    flex-grow: 2;
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i {
+    background-color: var(--celeste);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    padding: 1rem;
+    margin: 1rem 0 2rem 0;
+}
+header div p {
+    text-align: center;
+    padding: 1rem;
+}
+header div img {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+header nav .margin {
+    margin-bottom: 15px;
+}
+header div .input {
+    margin-left: 1.5rem;
+}
+header div .submit {
+    margin-left: 1.5rem;
+} 
+
+header nav {
+    display: none;
+    font-size: var(--text-md);
+}
+
+.banner {
+    margin-top: 190px;
+}
+
+header div .fa-hand-holding-usd {
+    margin-right: 0.5rem;
+}
+
+/* Main */
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    margin: 1rem auto;
+    background-color: #FFF;    
+}
+
+main section article a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main article div p{
+    text-align: left;
+}
+
+main article .main-article {
+    position: relative;
+    padding: 1rem 1.5rem 0.5rem;
+    border-top: 2px solid var(--gris-claro);
+}
+
+.price {
+    font-weight: bold;
+    font-size: var(--text-md);
+}
+
+main section article i {
+    display: block;
+    font-size: var(--text-lg);
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section article i,
+.discount {
+    color: var(--verde);
+}
+
+.discount, 
+.description {
+    font-size: var(--text-md);
+}
+
+.description {
+    color: var(--gris-oscuro);
+    margin: 1rem 0 0;
+    display: none;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main .products {
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.register h3 {
+    margin: 15px 0;
+}
+
+.register form input {
+    margin-bottom: 2rem;
+    border: none;
+    padding: 0.8rem;
+    width: 60%;
+    text-align: left;
+}
+
+.register form .rbtn {
+    align-self: center;
+    text-align: center;
+    width: 20%;
+    margin-left: 35%;
+}
+
+.register form {
+    width: 60%;
+    margin: auto;
+}
+
+.register form .intereses {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.register form .btn {
+    background-color: var(--celeste);
+    color: white;
+    width: 63%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+.register form .btn:hover {
+    background-color: var(--azul);
+}
+.register form input {
+    border-radius: 5px;
+}
+
+.register form h4 {
+    margin-bottom: 1rem;
+    font-size: var(--text-md);
+    text-align: center;
+}
+
+.register {
+    text-align: center;
+    margin-top: 180px;
+}
+
+
+/*Footer*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer section p {
+    margin-bottom: 25px;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    padding: 0 2rem 0 2rem;
+}
+
+footer section .copyr {
+    text-align: left;
+}
+
+footer section h5 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    align-items: center;
+    width: 100%;
+}
+
+footer section i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+    margin-top: 3rem;
+    width: 100%;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+footer section i:hover {
+    color: var(--azul);
+}
+
+footer section .fasfa-credit-card {
+    margin-top: 10px;
+}
+
+footer section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+/* RESPONSIVE */
+
+@media (min-width: 361px) {
+    .burger-menu i {
+        display: none;
+    }
+
+    main section article {
+        margin: 1rem; 
+    }
+    
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);   
+        }
+
+    header div div form input {
+        width: 30rem;
+    }
+
+    .banner {
+        margin-top: 270px;
+    }
+    
+    main article .main-article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left ;
+        flex-direction:row ;
+    }
+    
+    main section .discount {
+        padding:0 0 0 0.5rem;
+    }
+
+    main section article i {
+    transition: transform 0.3s ease;
+    }
+    
+    main section article:hover i {
+        transform: rotate(-90deg);
+    }
+
+    main section .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: none;
+        max-height: none;
+    }
+
+    main section div article {
+        max-height: 30rem;
+        max-width: 15rem;
+    }
+
+    .description {
+        display: block;
+        opacity: 0;
+        transition: opacity 0.3s linear;
+    }
+
+    article:hover .description {
+        opacity: 1;
+    }
+
+    header nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem;
+    }
+
+    header .logo {
+        max-width: 110px;
+        max-height: 60px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .register  {
+        margin-top: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    main section div article {
+        max-height: 32rem;
+        max-width: 16rem;
+    }
+
+    
+}
+
+@media (min-width: 768px) {
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .banner {
+    margin-top: 95px;
+    }
+
+    main section div article {
+        max-height: 31rem;
+        max-width: 19.5rem;
+    }
+
+    header .logo {
+        max-width: 110px;
+        max-height: 60px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        }
+
+    header nav ul{
+        display: flex;
+    }
+
+    header nav li{
+        margin: 0 5px;
+    }
+
+    footer section {
+        width: 33%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    header .logo {
+        max-width: 150px;
+        max-height: 100px;
+    }
+
+    .banner {
+        margin-top: 105px;
+    }
+
+}
